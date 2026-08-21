@@ -28,8 +28,9 @@ def main():
 
         screen.fill("black")
 
-        # Render player
+        # Render player and call update
         player.draw(screen) 
+        player.update(dt)
 
         # Refreshes the screen
         pygame.display.flip()
